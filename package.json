@@ -1,0 +1,59 @@
+{
+  "name": "site-starter",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "husky": "^1.1.3",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.14.3",
+    "tailwindcss": "^0.7.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "google-map-react": "^1.1.2",
+    "i": "^0.3.6",
+    "image-map": "^1.1.5",
+    "jquery": "^3.3.1",
+    "npm": "^6.9.0",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-id-swiper": "^2.1.1",
+    "react-image-gallery": "^0.8.14",
+    "react-image-mapper": "0.0.14",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.8"
+  },
+  "scripts": {
+    "start": "npm run theme-houses:css && react-scripts start",
+    "build": "npm run theme-houses:css && react-scripts build",
+    "theme-houses:css": "tailwind build src/themes/theme-houses/tailwind.src.css -c src/themes/theme-houses/tailwind.houses.js -o public/css/theme-houses.css",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
