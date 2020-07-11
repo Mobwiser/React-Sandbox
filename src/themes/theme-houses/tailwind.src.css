@@ -180,3 +180,40 @@ a.house-card:visited {
   text-underline: none;
   color: inherit;
 }
+
+/* Pictures gallery */
+.pictures-gallery .image-gallery-slide img {
+  width: 80%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.pictures-gallery .image-gallery-bullets .image-gallery-bullets-container {
+  margin-bottom: 80px;
+}
+
+.App .image-gallery-bullets .image-gallery-bullet {
+  padding: 3px !important;
+}
+
+.pictures-gallery .image-gallery-fullscreen-button:hover::before,
+.pictures-gallery .image-gallery-play-button:hover::before,
+.pictures-gallery .image-gallery-left-nav:hover::before,
+.pictures-gallery .image-gallery-right-nav:hover::before {
+  color: #b19025;
+}
+.pictures-gallery .image-gallery-thumbnail.active {
+  border: 4px solid #b19025;
+}
+
+.App .pictures-gallery .image-gallery-bullets {
+  height: 10px;
+}
+
+.pictures-gallery .image-gallery-slide img {
+  width: max-content;
+}
+.pictures-gallery .image-gallery-thumbnails-container {
+  width: 85vw;
+  overflow-y: scroll;
+}

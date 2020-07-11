@@ -1,4 +1,5 @@
 import Location from '../screens/location/location.screen';
+import Gallery from '../screens/gallery/gallery.screen';
 
 const ROUTERS = [
   {
@@ -6,7 +7,12 @@ const ROUTERS = [
     component: Location,
     exact: true,
     name: 'Location',
-    hideMenu: true,
+  },
+  {
+    path: '/gallery',
+    component: Gallery,
+    exact: true,
+    name: 'Gallery',
   },
 ];
 
