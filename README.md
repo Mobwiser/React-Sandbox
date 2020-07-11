@@ -3,8 +3,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 It includes a set of useful and professional components:
-- Interactive Map - Location component
-- Photo Gallery - Comming soon!
+
+- Interactive Map - Location component (/)
+- Photo Gallery - Gallery Component (/gallery)
 - Responsive menu - Comming soon!
 
 Subscribe to our mailing list and be the first to get to get free professional components!
