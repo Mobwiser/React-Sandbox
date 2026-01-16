@@ -24,7 +24,7 @@
     "react-image-mapper": "0.0.14",
     "react-responsive-modal": "^5.0.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.8"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "npm run theme-houses:css && react-scripts start",
